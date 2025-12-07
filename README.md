@@ -185,21 +185,24 @@ Your website will deploy automatically.
 ```
 
 
-📬 Contact Me
+---
+
+## 📬 Contact Me
+
+---
 
 If you’d like to connect, collaborate, or ask anything—reach out anytime!
 
-📧 Email: harshitrajput13985@gmail.com
+- 📧 **Email:** harshitrajput13985@gmail.com  
+- 🔗 **LinkedIn:** http://linkedin.com/in/harshitrajput139/  
+- 🐙 **GitHub:** https://github.com/Harshitrajput139  
+- 🌐 **Portfolio:** https://harshitportfolio-one.vercel.app/
 
-🔗 LinkedIn: http://linkedin.com/in/harshitrajput139/
-
-🐙 GitHub: https://github.com/Harshitrajput139
-
-🌐 Portfolio: https://harshitportfolio-one.vercel.app/
+---
 
 <div align="center">
-❤️ Made with passion by Harshit Rajput
 
-CareerCompass – Guiding Your Future
+❤️ Made with passion by Harshit Rajput  
+**CareerCompass – Guiding Your Future**
 
 </div>
