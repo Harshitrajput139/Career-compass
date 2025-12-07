@@ -97,28 +97,28 @@ Find teammates for:
 # 🖼️ UI Screenshots
 
 ### 🏠 Home Page  
-<img src="assets/home.png" width="900"/>
+<img src="assests/home.png" width="900"/>
 
 ### 📊 Compare Careers  
-<img src="assets/compare.png" width="900"/>
+<img src="assests/compare.png" width="900"/>
 
 ### 🎯 Skills Guide  
-<img src="assets/skillneed.png" width="900"/>
+<img src="assests/skillneed.png" width="900"/>
 
 ### 🧠 Career Quiz  
-<img src="assets/quiz.png" width="900"/>
+<img src="assests/quiz.png" width="900"/>
 
 ### 👨‍🏫 Mentor Connect  
-<img src="assets/mentor.png" width="900"/>
+<img src="assests/mentor.png" width="900"/>
 
 ### 🌎 Country Guide  
-<img src="assets/country.png" width="900"/>
+<img src="assests/country.png" width="900"/>
 
 ### 👥 Team Up  
-<img src="assets/teamup.png" width="900"/>
+<img src="assests/teamup.png" width="900"/>
 
 ### 🚨 Scam Alerts  
-<img src="assets/scam.png" width="900"/>
+<img src="assests/scam.png" width="900"/>
 
 ---
 
@@ -181,7 +181,7 @@ Then open index.html in any browser.
 
 4. Click Save
 
-Your website will deploy automatically.
+Your website will deploy automatically.```
 
 
 📬 Contact Me
