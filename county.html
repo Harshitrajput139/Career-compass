@@ -5,153 +5,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Guide | CareerCompass</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <!-- change filename if your CSS is named differently -->
     <link rel="stylesheet" href="country-guide.css">
+    <link rel="shortcut icon" href="assests/logo.png" type="image/x-icon">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- ---------------- NAVBAR ---------------- -->
     <nav class="navbar">
-        <div class="logo-box">
-    <a href="index.html">
-        <img src="assests/logo.png" alt="CareerCompass Logo" class="logo-full">
-    </a>
-</div>
+        <div class="container nav-container">
 
-             <ul class="nav-links">
+            <div class="logo-box">
+                <a href="index.html">
+                    <!-- keep this path same as your other pages -->
+                    <img src="assests/logo.png" alt="CareerCompass Logo" class="logo-full">
+                </a>
+            </div>
+
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="compare.html">Compare Careers</a></li>
-                <li><a href="carrer-quiz.html">Quiz</a></li>
+                <li><a href="career-quiz.html">Quiz</a></li>
                 <li><a href="mentor.html">Mentors</a></li>
-                <li><a href="#">Sign in </a></li>
+                <li><a href="#">Sign in</a></li>
                 <li><a href="#">Sign up</a></li>
             </ul>
+
         </div>
     </nav>
 
-    <!-- COUNTRY SELECTOR + HEADER -->
-    <section class="country-header container">
+    <!-- ---------------- HERO SECTION ---------------- -->
+    <section class="hero-section">
+        <div class="container">
+            <button class="hero-btn">Plan Your Career Abroad</button>
 
-        <!-- Country selector -->
-        <div class="country-select-card">
-            <label for="countrySelect">Select a Country</label>
-            <div class="select-wrapper">
-                <select id="countrySelect">
-                    <option value="" disabled selected>Select a country to explore</option>
-                    <option>Germany</option>
-                    <option>Canada</option>
-                    <option>United States</option>
-                    <option>United Kingdom</option>
-                    <option>Australia</option>
-                </select>
-            </div>
-            <p class="select-hint">
-                (This page will show country-wise career information once data is connected.)
+            <h1 class="hero-title">Explore Career Opportunities by Country</h1>
+
+            <p class="hero-desc">
+                Choose a country to see in-demand roles, salary ranges, visa requirements, cost of living,
+                and important things to keep in mind before you move.
             </p>
-        </div>
-
-        <!-- Header preview card -->
-        <div class="country-card">
-
-            <div class="country-left">
-                <h1 class="country-code">CC</h1>
-                <h3 class="country-name">Selected Country</h3>
-
-                <div class="country-tags">
-                    <span class="tag-green">Job Demand level will appear here</span>
-                    <span class="tag-blue">Average salary range will appear here</span>
-                </div>
-            </div>
-
-            <div class="score-box">
-                <p>Work Opportunities Score</p>
-                <div class="progress-bar">
-                    <!-- empty bar, just UI -->
-                    <div class="progress-fill" style="width:0%"></div>
-                </div>
-                <span class="score-value">Score will show here</span>
-            </div>
-
         </div>
     </section>
 
-    <!-- MAIN GRID (only showing what data this feature can display) -->
-    <section class="main-grid container">
+    <main class="container">
 
-        <!-- TOP IN-DEMAND CAREERS -->
-        <div class="info-card">
-            <div class="card-title">
-                <span class="icon blue">💼</span> Top In-Demand Careers
+        <!-- ---------------- COUNTRY HEADER ---------------- -->
+        <section class="country-header">
+
+            <!-- Country Selector Card -->
+            <div class="country-select-card">
+                <label for="country-select">Select a Country</label>
+                <div class="select-wrapper">
+                    <select id="country-select">
+                        <option value="" disabled selected>Choose a country</option>
+                        <option>Canada</option>
+                        <option>United States</option>
+                        <option>United Kingdom</option>
+                        <option>Germany</option>
+                        <option>Australia</option>
+                        <option>Singapore</option>
+                        <option>Japan</option>
+                    </select>
+                </div>
+                <p class="select-hint">
+                    (In a future version, this will update all sections below with real data.)
+                </p>
             </div>
 
-            <p class="placeholder">
-                This website can show the most in-demand careers for the selected country
-                (e.g., Software Engineer, Data Engineer, etc.).
-            </p>
-        </div>
+            <!-- Country Summary Card -->
+            <div class="country-card">
+                <div class="country-left">
+                    <h1>Country Guide</h1>
+                    <p class="country-name">Selected Country: <strong>(Waiting for selection)</strong></p>
 
-        <!-- REQUIRED EXAMS -->
-        <div class="info-card">
-            <div class="card-title">
-                <span class="icon pink">📘</span> Required Exams
+                    <div class="country-tags">
+                        <span class="tag-green">High Skilled Demand</span>
+                        <span class="tag-blue">Student & Work Options</span>
+                    </div>
+
+                    <div class="score-box">
+                        <p>Overall Career Opportunity Score</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+                        <span class="score-value">(Example placeholder score – will be dynamic later)</span>
+                    </div>
+                </div>
             </div>
 
-            <p class="placeholder">
-                This section can list language tests and entrance exams needed to work or study
-                in that country (for example: IELTS, TOEFL, TestDaF, JLPT).
-            </p>
-        </div>
+        </section>
 
-        <!-- VISA & WORK PERMITS -->
-        <div class="info-card">
-            <div class="card-title">
-                <span class="icon green">🌍</span> Visa & Work Permits
-            </div>
+        <!-- ---------------- MAIN GRID ---------------- -->
+        <section class="main-grid">
 
-            <p class="placeholder">
-                Here the website can show visa options like work visa, student visa, job seeker visa,
-                and basic conditions for each.
-            </p>
-        </div>
+            <!-- Visa & Eligibility -->
+            <article class="info-card">
+                <h3 class="card-title">
+                    <span class="icon blue">🛂</span>
+                    Visa & Eligibility
+                </h3>
+                <p class="placeholder">
+                    This section will show student visa, work visa, and PR eligibility paths for the selected country.
+                </p>
+            </article>
 
-        <!-- IN-DEMAND SKILLS -->
-        <div class="info-card">
-            <div class="card-title">
-                <span class="icon orange">📈</span> In-Demand Skills
-            </div>
+            <!-- In-demand Roles -->
+            <article class="info-card">
+                <h3 class="card-title">
+                    <span class="icon green">📈</span>
+                    In-demand Roles
+                </h3>
+                <p class="placeholder">
+                    Here you’ll see top in-demand careers (e.g., Software Engineer, Data Scientist, Nurses, etc.)
+                    along with growth trends.
+                </p>
+            </article>
 
-            <p class="placeholder">
-                This area can display skill tags that are highly valued in the selected country
-                (for example: German language, cloud computing, AI, automotive tech).
-            </p>
-        </div>
+            <!-- Salary Overview -->
+            <article class="info-card">
+                <h3 class="card-title">
+                    <span class="icon orange">💰</span>
+                    Salary Overview
+                </h3>
+                <p class="placeholder">
+                    This block will show average entry, mid-level, and senior-level salary ranges for key roles.
+                </p>
+            </article>
 
-        <!-- ADVANTAGES -->
-        <div class="info-card">
-            <div class="card-title">
-                <span class="icon green">✔</span> Advantages
-            </div>
+            <!-- Cost of Living -->
+            <article class="info-card">
+                <h3 class="card-title">
+                    <span class="icon pink">🏙</span>
+                    Cost of Living
+                </h3>
+                <p class="placeholder">
+                    Estimated monthly expenses: rent, food, transport, insurance, and student lifestyle costs.
+                </p>
+            </article>
 
-            <p class="placeholder">
-                This card can highlight the benefits of working in that country, such as strong economy,
-                free education, higher salaries, or work–life balance.
-            </p>
-        </div>
+            <!-- Work Culture & Lifestyle -->
+            <article class="info-card">
+                <h3 class="card-title">
+                    <span class="icon blue">🤝</span>
+                    Work Culture & Lifestyle
+                </h3>
+                <p class="placeholder">
+                    Typical work hours, holidays, work–life balance, and cultural expectations in the workplace.
+                </p>
+            </article>
 
-        <!-- CHALLENGES -->
-        <div class="info-card">
-            <div class="card-title">
-                <span class="icon warning">⚠</span> Challenges
-            </div>
+            <!-- Safety & Things to Be Careful About -->
+            <article class="info-card">
+                <h3 class="card-title">
+                    <span class="icon warning">⚠</span>
+                    Safety & Important Notes
+                </h3>
+                <p class="placeholder">
+                    Safety tips, scam alerts, legal rules, and things international students and professionals
+                    should be careful about.
+                </p>
+            </article>
 
-            <p class="placeholder">
-                Here the website can show possible challenges like language barrier, visa difficulty,
-                cultural adjustment, or lower entry-level salaries.
-            </p>
-        </div>
+        </section>
 
-    </section>
+    </main>
 
 </body>
 </html>

@@ -1,13 +1,23 @@
-/* ROOT */
+/* -------------------------------------- */
+/*               ROOT VARIABLES           */
+/* -------------------------------------- */
 :root{
     --primary-text-color:#183b56;
     --secondary-text-color:#577592;
+
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+
     --card-bg:#ffffff;
     --gradient-blue:linear-gradient(135deg,#4e8bff,#a77bff);
     --gradient-purple:linear-gradient(135deg,#6f41ff,#d85cff);
+
+    --padding-inline-section:20px;
 }
 
-/* GLOBAL */
+/* -------------------------------------- */
+/*              GLOBAL RESET              */
+/* -------------------------------------- */
 *{
     margin:0;
     padding:0;
@@ -22,10 +32,12 @@ body{
 .container{
     max-width:1200px;
     margin:0 auto;
-    padding:0 20px;
+    padding:0 var(--padding-inline-section);
 }
 
-/* NAVBAR */
+/* -------------------------------------- */
+/*                NAVBAR                  */
+/* -------------------------------------- */
 .navbar {
     width: 100%;
     background: #ffffff;
@@ -42,37 +54,26 @@ body{
     justify-content: space-between;
 }
 
-/* LOGO SECTION */
+/* LOGO */
 .logo-box {
     display: flex;
     align-items: center;
 }
-.logo-box a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
 
-
-/* FULL LOGO IMAGE (symbol + text + tagline) */
-
-    .logo-full {
+.logo-full {
     height: 48px;
     width: auto;
     object-fit: contain;
     display: block;
 }
 
-
-
-/* OPTIONAL: Smaller logo for small screens */
 @media (max-width: 480px) {
     .logo-full {
         height: 38px;
     }
 }
 
-/* NAVIGATION LINKS */
+/* NAV LINKS */
 .nav-links {
     display: flex;
     gap: 35px;
@@ -90,12 +91,52 @@ body{
     color: var(--accent-color);
 }
 
-/* REMOVE OLD LOGO CLASSES TO AVOID CONFLICTS */
-.logo-icon, .logo-text {
-    display: none !important;
+/* -------------------------------------- */
+/*              HERO SECTION              */
+/* -------------------------------------- */
+.hero-section{
+    width: 100%;
+    background: linear-gradient(135deg, #f8fbff, #eef4ff);
+    padding: 60px 20px;
+    text-align: center;
 }
 
-/* ---------------- COUNTRY HEADER ---------------- */
+.hero-btn{
+    padding: 12px 28px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(135deg, #3d7bff, #b12bff);
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover{
+    opacity: 0.9;
+}
+
+.hero-title{
+    margin-top: 20px;
+    font-size: 2rem;
+    color: var(--primary-text-color);
+    font-weight: 600;
+}
+
+.hero-desc{
+    margin-top: 15px;
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+}
+
+/* -------------------------------------- */
+/*         COUNTRY HEADER SECTION         */
+/* -------------------------------------- */
 .country-header{
     margin-top:30px;
     display:flex;
@@ -103,7 +144,7 @@ body{
     gap:18px;
 }
 
-/* selector card */
+/* SELECT CARD */
 .country-select-card{
     background:#ffffff;
     border-radius:18px;
@@ -136,7 +177,7 @@ body{
     appearance:none;
 }
 
-/* dropdown arrow */
+/* Dropdown arrow */
 .select-wrapper::after{
     content:"▾";
     position:absolute;
@@ -155,7 +196,7 @@ body{
     font-style:italic;
 }
 
-/* header preview card */
+/* COUNTRY INFO CARD */
 .country-card{
     background:linear-gradient(135deg,#f1f4ff,#fefaff);
     padding:24px 26px;
@@ -164,7 +205,7 @@ body{
 }
 
 .country-left h1{
-    font-size:3rem;
+    font-size:2.6rem;
     margin-bottom:5px;
     color:var(--primary-text-color);
 }
@@ -223,7 +264,9 @@ body{
     margin-top:6px;
 }
 
-/* ---------------- MAIN GRID ---------------- */
+/* -------------------------------------- */
+/*              MAIN GRID                 */
+/* -------------------------------------- */
 .main-grid{
     margin-top:30px;
     display:grid;
@@ -266,7 +309,6 @@ body{
 .orange{ background:#ff7a2f; }
 .warning{ background:#ffb02e; }
 
-/* placeholder text */
 .placeholder{
     font-size:0.94rem;
     color:var(--secondary-text-color);

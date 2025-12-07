@@ -1,96 +1,128 @@
-📌 CareerCompass – Guiding Your Future
+<div align="center">
+  <img src="assets/logo.png" alt="CareerCompass Logo" width="120" />
 
-CareerCompass is a modern, responsive career-guidance platform designed to help students and professionals explore career paths, compare job roles, learn future skills, and stay safe from scams—all in one place.
+  # 🎯 CareerCompass – Guiding Your Future
 
-Live Website (GitHub Pages):
-👉 https://harshitrajput139.github.io/Career-compass/
+  A modern, responsive career-guidance platform helping students and professionals explore career paths, compare job roles, learn future skills, connect with mentors, and stay safe from scams — all in one place.
 
-🚀 Features Included in This Project
-🔹 1. Home Page
+  🔗 **Live Website:**  
+  **https://harshitrajput139.github.io/Career-compass/**
+</div>
 
+---
+
+## 🚀 Features Included in This Project
+
+### 🔹 1. Home Page
 Beautiful landing page with:
+- Hero section  
+- Navigation bar  
+- Feature cards  
+- Smooth gradients  
+- Fully responsive layout  
 
-Hero section
+---
 
-Search bar
+### 🔹 2. Compare Careers
+Compare two careers side-by-side based on:
+- Salary  
+- Demand  
+- Difficulty  
+- Study time  
+- Required skills  
+- Work-life balance  
 
-Feature cards (Compare Careers, Skills Guide, Mentor Connect, Scam Alerts, Country Guide, Career Match Quiz, etc.)
+📄 Files: `compare.html`, `compare.css`
 
-🔹 2. Compare Careers
+---
 
-Side-by-side comparison of:
+### 🔹 3. What Skills Do I Need?
+Shows required skills for:
+- Beginner  
+- Intermediate  
+- Expert  
+- Average learning duration  
 
-Salary
+📄 Files: `skills.html`, `skills.css`
 
-Demand
+---
 
-Skills required
+### 🔹 4. Career Match Quiz
+A simple quiz that matches users with suitable careers.
 
-Growth potential
+📄 Files: `career-quiz.html`, `career-quiz.css`
 
-Files: compare.html, compare.css
+---
 
-🔹 3. Career Quiz
+### 🔹 5. Mentor Connect
+Connect with mentors for real industry guidance.
 
-A simple interest-based quiz to match users with suitable careers.
+📄 Files: `mentor.html`, `mentor.css`
 
-Files: career-quiz.html, career-quiz.css
+---
 
-🔹 4. Mentor Connect
+### 🔹 6. Scam Alert System
+Stay protected from:
+- Fake internships  
+- Fake job postings  
+- Online career scams  
 
-Connect with verified professionals for guidance and real career insights.
+📄 Files: `scam-alert.html`, `scam-alert.css`
 
-Files: mentor.html, mentor.css
+---
 
-🔹 5. Scam Alert System
+### 🔹 7. Country Guide
+Explore opportunities globally:
+- Visa rules  
+- In-demand roles  
+- Salary overview  
+- Cost of living  
+- Work culture  
+- Safety tips  
 
-Stay protected from fake job postings and fraud.
+📄 Files: `country-guide.html`, `country-guide.css`
 
-Includes:
+---
 
-Common scam patterns
+### 🔹 8. Team Up
+Find teammates for:
+- Hackathons  
+- Competitions  
+- Projects  
 
-Real scam reports
+📄 Files: `team-up.html`, `team-up.css`
 
-Safety tips
+---
 
-Files: scam-alert.html, scam-alert.css
+# 🖼️ UI Screenshots
 
-🔹 6. Skills Guide
+### 🏠 Home Page  
+<img src="assets/home.png" width="900"/>
 
-Must-have future skills such as:
+### 📊 Compare Careers  
+<img src="assets/compare.png" width="900"/>
 
-AI/ML
+### 🎯 Skills Guide  
+<img src="assets/skillneed.png" width="900"/>
 
-Cloud Computing
+### 🧠 Career Quiz  
+<img src="assets/quiz.png" width="900"/>
 
-Data Analytics
+### 👨‍🏫 Mentor Connect  
+<img src="assets/mentor.png" width="900"/>
 
-Cybersecurity
+### 🌎 Country Guide  
+<img src="assets/country.png" width="900"/>
 
-Marketing
+### 👥 Team Up  
+<img src="assets/teamup.png" width="900"/>
 
-Files: skills.html, skills.css
+### 🚨 Scam Alerts  
+<img src="assets/scam.png" width="900"/>
 
-🔹 7. Country Career Guide
+---
 
-Explore country-based career information:
-
-Job opportunities
-
-Visa details
-
-Market demand
-
-Files: country-guide.html, country-guide.css
-
-🔹 8. Team Up
-
-Find teammates for projects, hackathons, and collaborations.
-
-Files: team-up.html, team-up.css
-
-📂 Project Structure
+## 📁 Project Structure
 CareerCompass/
 │── index.html
 │── style.css
@@ -109,46 +141,64 @@ CareerCompass/
 │── team-up.html
 │── team-up.css
 │── README.md
-└── assets/
-      ├── logo/
-      └── images/
+│── assets/
+├── home.png
+├── compare.png
+├── quiz.png
+├── mentor.png
+├── scam.png
+├── skillneed.png
+├── country.png
+├── teamup.png
+└── logo.png
 
-🛠️ Technologies Used
+## ⚙️ Technologies Used
 
-HTML5
+- **HTML5**
+- **CSS3**
+- **Responsive Layout**
+- **Flexbox & CSS Grid**
+- **Google Fonts (Poppins, Roboto)**
+- **Custom UI Components**
 
-CSS3
+---
 
-Responsive Layouts
+## 💻 Run Locally
 
-Google Fonts
-
-Icons & UI Components
-
-📦 How to Run Locally
-git clone https://github.com/Harshitrajput139/Carrer-compass.git
-cd Carrer-compass
-
-
+```bash
+git clone https://github.com/Harshitrajput139/Career-compass.git
+cd Career-compass
 Then open index.html in any browser.
 
-🚀 Deploying to GitHub Pages
 
-Go to Settings → Pages
+🌐 Deploying to GitHub Pages
 
-Select branch: main
+1. Go to Settings → Pages
 
-Folder: root
+2. Select branch: main
 
-Save
+3. Folder: /root
 
-Your site will deploy automatically.
+4. Click Save
 
-✨ Author
+Your website will deploy automatically.
 
-Harshit Rajput
-CareerCompass Developer
 
-📝 License
+📬 Contact Me
 
-This project is licensed for personal and educational use only.
+If you’d like to connect, collaborate, or ask anything—reach out anytime!
+
+📧 Email: harshitrajput13985@gmail.com
+
+🔗 LinkedIn: http://linkedin.com/in/harshitrajput139/
+
+🐙 GitHub: https://github.com/Harshitrajput139
+
+🌐 Portfolio: https://harshitportfolio-one.vercel.app/
+
+<div align="center">
+❤️ Made with passion by Harshit Rajput
+
+CareerCompass – Guiding Your Future
+
+</div>
