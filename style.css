@@ -1,0 +1,331 @@
+/* -------------------- ROOT + GLOBAL -------------------- */
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-gradient: linear-gradient(135deg, #4e2bff, #d642f5);
+    --padding-inline-section:20px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins", sans-serif;
+}
+
+.container{
+    max-width:1200px;
+    margin:0 auto;
+}
+
+/* -------------------- NAVBAR -------------------- */
+
+.navbar {
+    width: 100%;
+    background: #ffffff;
+    padding: 15px var(--padding-inline-section);
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO SECTION */
+.logo-box {
+    display: flex;
+    align-items: center;
+}
+
+.logo-box a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* FULL LOGO IMAGE (symbol + text + tagline) */
+
+    .logo-full {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+
+
+/* OPTIONAL: Smaller logo for small screens */
+@media (max-width: 480px) {
+    .logo-full {
+        height: 38px;
+    }
+}
+
+/* NAVIGATION LINKS */
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* REMOVE OLD LOGO CLASSES TO AVOID CONFLICTS */
+.logo-icon, .logo-text {
+    display: none !important;
+}
+
+
+
+/* -------------------- HERO SECTION -------------------- */
+.hero-section{
+    width: 100%;
+    background: linear-gradient(135deg, #f8fbff, #eef4ff);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-btn{
+    padding: 12px 28px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(135deg, #3d7bff, #b12bff);
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover{
+    opacity: 0.9;
+}
+
+.hero-title{
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: var(--primary-text-color);
+    font-weight: 600;
+}
+
+.hero-desc{
+    margin-top: 15px;
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+}
+
+/* -------------------- FEATURES SECTION -------------------- */
+
+/* ICON CONTAINER */
+.feature-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+/* default blue (Compare Two Careers) */
+.feature-blue {
+    background: linear-gradient(135deg, #0084ff, #0062ff);
+}
+
+/* icon inside */
+.feature-icon i {
+    color: #fff;
+    font-size: 22px;
+}
+
+/* ------------ FEATURES LAYOUT ------------ */
+.features-section {
+    padding: 40px 20px 70px;
+    background: linear-gradient(135deg, #f5f8ff, #f3f6ff);
+}
+
+.features-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+/* tablets */
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.feature-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 22px 24px;
+    border: 1px solid #dde7ff;
+    box-shadow: 0 8px 20px rgba(15, 52, 191, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* soft background for Country Guide card */
+.feature-card-soft {
+    background: linear-gradient(135deg, #f2fff7, #f7fffb);
+}
+
+/* small hover effect */
+.feature-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(15, 52, 191, 0.08);
+}
+
+/* ------------ ICON COLOR VARIANTS ------------ */
+.icon-blue {
+    background: linear-gradient(135deg, #007bff, #00a2ff);
+}
+
+.icon-purple {
+    background: linear-gradient(135deg, #b12bff, #ff4fd8);
+}
+
+.icon-indigo {
+    background: linear-gradient(135deg, #4353ff, #6a72ff);
+}
+
+.icon-green {
+    background: linear-gradient(135deg, #09b86b, #13d38a);
+}
+
+.icon-orange {
+    background: linear-gradient(135deg, #ff7a1a, #ff9c33);
+}
+
+.icon-pink {
+    background: linear-gradient(135deg, #ff2f7a, #ff6ed5);
+}
+
+/* ------------ TEXT STYLES ------------ */
+.feature-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-text-color);
+}
+
+.feature-card p {
+    font-size: 0.98rem;
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+}
+
+.feature-link {
+    margin-top: 8px;
+    font-size: 0.98rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #2294ed;
+}
+
+
+/* -------------------- STATS SECTION -------------------- */
+.stats-section{
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #f7faff, #f3f4ff);
+}
+
+.stats-grid{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* Tablet */
+@media (min-width: 768px){
+    .stats-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px){
+    .stats-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.stat-card{
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #dce7ff;
+    box-shadow: 0 8px 18px rgba(15, 52, 191, 0.06);
+    
+    
+
+}
+
+.stat-number{
+    font-size: 1.8rem;
+    font-weight: 600;
+   
+   color: #183b56;
+    font-weight: 700;
+    color: transparent;
+}
+
+.stat-label{
+    margin-top: 8px;
+    font-size: 1rem;
+    color: var(--primary-text-color);
+    font-weight: 500;
+}
+
+
+.stat-card p {
+    color: #183b56;   /* Dark blue text */
+}
+.stat-number {
+    color: #183b56;
+    font-weight: 700;
+}
+
+.footer {
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 40px;
+    border-top: 1px solid #e5e9f2;
+    font-size: 0.95rem;
+    color: #4a4a4a;
+    letter-spacing: 0.3px;
+}
+
+

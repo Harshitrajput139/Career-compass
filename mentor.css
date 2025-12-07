@@ -1,0 +1,195 @@
+/* ROOT + GLOBAL */
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-gradient: linear-gradient(135deg, #4e2bff, #d642f5);
+    --padding-inline-section:20px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins", sans-serif;
+}
+
+body{
+    background:#f5f8ff;
+}
+
+.container{
+    max-width:1200px;
+    margin:0 auto;
+}
+
+/* ---------------- NAVBAR (same as other pages) ---------------- */
+.navbar {
+    width: 100%;
+    background: #ffffff;
+    padding: 15px var(--padding-inline-section);
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO SECTION */
+.logo-box {
+    display: flex;
+    align-items: center;
+}
+.logo-box a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+/* FULL LOGO IMAGE (symbol + text + tagline) */
+
+    .logo-full {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+
+
+/* OPTIONAL: Smaller logo for small screens */
+@media (max-width: 480px) {
+    .logo-full {
+        height: 38px;
+    }
+}
+
+/* NAVIGATION LINKS */
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* REMOVE OLD LOGO CLASSES TO AVOID CONFLICTS */
+.logo-icon, .logo-text {
+    display: none !important;
+}
+
+/* ---------------- MENTOR PAGE ---------------- */
+.mentor-section{
+    padding:60px 20px 60px;
+    background: linear-gradient(135deg,#f8fbff,#eef4ff);
+}
+
+.mentor-header{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 40px;
+}
+
+.mentor-header h2{
+    font-size:1.8rem;
+    font-weight:600;
+    color:#2b4bbe;
+}
+
+.mentor-header p{
+    margin-top:10px;
+    font-size:1rem;
+    color:var(--secondary-text-color);
+    line-height:1.6;
+}
+
+.mentor-grid{
+    display:grid;
+    gap:24px;
+    grid-template-columns:1fr;
+}
+
+@media (min-width: 900px){
+    .mentor-grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+.mentor-card{
+    background:#ffffff;
+    border-radius:22px;
+    padding:24px;
+    text-align:center;
+    box-shadow:0 12px 26px rgba(40, 70, 180, 0.10);
+}
+
+.mentor-photo{
+    width:90px;
+    height:90px;
+    background:#00d084;
+    border-radius:50%;
+    margin:0 auto 12px;
+}
+
+.mentor-photo2{
+    background:#7b61ff;
+}
+
+.mentor-photo3{
+    background:#ff5e7e;
+}
+
+.mentor-name{
+    font-size:1.2rem;
+    font-weight:600;
+    color:var(--primary-text-color);
+}
+
+.mentor-role{
+    margin-top:4px;
+    font-size:0.95rem;
+    color:var(--secondary-text-color);
+}
+
+.mentor-skills{
+    list-style:none;
+    padding:0;
+    margin:14px 0 18px;
+}
+
+.mentor-skills li{
+    font-size:0.92rem;
+    color:var(--primary-text-color);
+    margin-bottom:6px;
+}
+
+.connect-btn{
+    padding:10px 22px;
+    border:none;
+    cursor:pointer;
+    font-size:0.95rem;
+    border-radius:22px;
+    color:#fff;
+    background:linear-gradient(135deg,#4e2bff,#d642f5);
+    font-weight:500;
+    transition:0.3s;
+}
+
+.connect-btn:hover{
+    opacity:0.9;
+}

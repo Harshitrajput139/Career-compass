@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Up | CareerCompass</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="team-up.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-container">
+ <div class="logo-box">
+    <a href="index.html">
+        <img src="assests/logo.png" alt="CareerCompass Logo" class="logo-full">
+    </a>
+</div>
+
+             <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="compare.html">Compare Careers</a></li>
+                <li><a href="carrer-quiz.html">Quiz</a></li>
+                <li><a href="mentor.html">Mentors</a></li>
+                <li><a href="#">Sign in </a></li>
+                <li><a href="#">Sign up</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- TEAM UP SECTION -->
+    <section class="teamup-section">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="teamup-header">
+                <h2>Team Up</h2>
+                <p>
+                    Find partners for hackathons, competitions, college projects, and collaborations.
+                    This page lets students discover teammates who match their skills and interests.
+                </p>
+            </div>
+
+            <!-- Filters / Info Card -->
+            <div class="filter-card">
+                <h3>Find a Team or Teammates</h3>
+                <p class="filter-text">
+                    This feature can allow users to select event type, required skills, and availability
+                    to match with the right teammates.
+                </p>
+
+                <div class="filter-grid">
+                    <div class="filter-field">
+                        <label>Event Type</label>
+                        <div class="select-wrapper">
+                            <select>
+                                <option selected disabled>Select type (Hackathon, Project…)</option>
+                                <option>Hackathon</option>
+                                <option>College Project</option>
+                                <option>Startup Idea</option>
+                                <option>Online Competition</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="filter-field">
+                        <label>Primary Skill</label>
+                        <div class="select-wrapper">
+                            <select>
+                                <option selected disabled>Select skill</option>
+                                <option>Web Development</option>
+                                <option>App Development</option>
+                                <option>UI/UX Design</option>
+                                <option>Data Science / ML</option>
+                                <option>Hardware / IoT</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="filter-field">
+                        <label>Availability</label>
+                        <div class="select-wrapper">
+                            <select>
+                                <option selected disabled>Time commitment</option>
+                                <option>Weekend only</option>
+                                <option>Weekdays evening</option>
+                                <option>Flexible</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="filter-note">
+                    (Currently this is a design preview. Actual matching and filtering can be added later.)
+                </p>
+            </div>
+
+            <!-- Team / Project Cards -->
+            <div class="team-grid">
+
+                <!-- Card 1 -->
+                <article class="team-card">
+                    <div class="team-header">
+                        <span class="badge hackathon">Hackathon</span>
+                        <span class="slots">Looking for 2 teammates</span>
+                    </div>
+
+                    <h3>AI-Powered Career Recommendation App</h3>
+                    <p class="team-desc">
+                        Team building an AI web app that suggests careers based on user skills and interests.
+                    </p>
+
+                    <div class="role-tags">
+                        <span class="role-tag">Frontend Developer</span>
+                        <span class="role-tag">Backend Developer</span>
+                        <span class="role-tag">ML Engineer</span>
+                    </div>
+
+                    <div class="team-footer">
+                        <span class="level">Level: Intermediate</span>
+                        <button class="team-btn">Request to Join</button>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="team-card">
+                    <div class="team-header">
+                        <span class="badge project">College Project</span>
+                        <span class="slots">Looking for 1 designer</span>
+                    </div>
+
+                    <h3>Smart Attendance & Notes Portal</h3>
+                    <p class="team-desc">
+                        Building a portal where students can see deadlines, notes, and attendance in one place.
+                    </p>
+
+                    <div class="role-tags">
+                        <span class="role-tag">UI/UX Designer</span>
+                        <span class="role-tag">React Developer</span>
+                    </div>
+
+                    <div class="team-footer">
+                        <span class="level">Level: Beginner–Friendly</span>
+                        <button class="team-btn">Request to Join</button>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="team-card">
+                    <div class="team-header">
+                        <span class="badge competition">Online Competition</span>
+                        <span class="slots">Looking for 3 members</span>
+                    </div>
+
+                    <h3>Data Analytics Challenge Team</h3>
+                    <p class="team-desc">
+                        Preparing for an online data analytics case competition using Python and dashboards.
+                    </p>
+
+                    <div class="role-tags">
+                        <span class="role-tag">Data Analyst</span>
+                        <span class="role-tag">Power BI / Tableau</span>
+                        <span class="role-tag">Presentation Skills</span>
+                    </div>
+
+                    <div class="team-footer">
+                        <span class="level">Level: Intermediate / Advanced</span>
+                        <button class="team-btn">Request to Join</button>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

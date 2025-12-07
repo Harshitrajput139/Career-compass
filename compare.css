@@ -1,0 +1,241 @@
+/* ROOT + GLOBAL */
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-gradient: linear-gradient(135deg, #4e2bff, #d642f5);
+    --padding-inline-section:20px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins", sans-serif;
+}
+
+body{
+    background: #f5f8ff;
+}
+
+.container{
+    max-width:1200px;
+    margin:0 auto;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+    width: 100%;
+    background: #ffffff;
+    padding: 15px var(--padding-inline-section);
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO SECTION */
+.logo-box {
+    display: flex;
+    align-items: center;
+}
+
+/* FULL LOGO IMAGE (symbol + text + tagline) */
+
+    .logo-full {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+.logo-box a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+
+/* OPTIONAL: Smaller logo for small screens */
+@media (max-width: 480px) {
+    .logo-full {
+        height: 38px;
+    }
+}
+
+/* NAVIGATION LINKS */
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* REMOVE OLD LOGO CLASSES TO AVOID CONFLICTS */
+.logo-icon, .logo-text {
+    display: none !important;
+}
+
+/* ---------------- COMPARE SECTION ---------------- */
+.compare-section{
+    padding:60px 20px 50px;
+    background: linear-gradient(135deg, #f8fbff, #eef4ff);
+}
+
+.compare-header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.compare-header h2{
+    font-size:1.7rem;
+    font-weight:600;
+    color:#2b4bbe;
+}
+
+.compare-header p{
+    margin-top:8px;
+    font-size:1rem;
+    color:var(--secondary-text-color);
+}
+
+/* DROPDOWN CARD */
+.compare-card{
+    background:#ffffff;
+    border-radius:26px;
+    box-shadow:0 14px 30px rgba(40, 70, 180, 0.08);
+    padding:30px 28px;
+    display:grid;
+    gap:24px;
+    grid-template-columns:1fr;
+}
+
+/* two columns on desktop */
+@media (min-width: 900px){
+    .compare-card{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+.career-column{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.career-label{
+    font-size:1.05rem;
+    color:var(--primary-text-color);
+    font-weight:500;
+}
+
+/* SELECT DROPDOWNS */
+.select-wrapper{
+    background:#f6f6f9;
+    border-radius:24px;
+    padding:14px 16px;
+    border:1px solid #e3e4ee;
+    position:relative;
+}
+
+.select-wrapper select{
+    width:100%;
+    border:none;
+    background:transparent;
+    font-size:1rem;
+    color:var(--primary-text-color);
+    outline:none;
+    appearance:none;
+}
+
+/* Custom dropdown arrow */
+.select-wrapper::after{
+    content:"▾";
+    position:absolute;
+    right:18px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:0.9rem;
+    color:#b0b3c0;
+    pointer-events:none;
+}
+
+/* ---------------- RESULT CARDS ---------------- */
+.results-section{
+    margin-top:30px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.result-card{
+    background:#ffffff;
+    border-radius:26px;
+    overflow:hidden;
+    box-shadow:0 12px 26px rgba(40, 70, 180, 0.10);
+}
+
+/* Header styling */
+.result-header{
+    padding:12px 24px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#ffffff;
+    font-weight:500;
+}
+
+/* Color headers */
+.header-green{
+    background:linear-gradient(135deg,#00c853,#00e676);
+}
+
+.header-blue{
+    background:linear-gradient(135deg,#0081ff,#00b4ff);
+}
+
+.header-orange{
+    background:linear-gradient(135deg,#ff6a00,#ff3d2f);
+}
+
+.header-purple-pink{
+    background:linear-gradient(135deg,#a932ff,#ff3ed2);
+}
+
+.header-violet{
+    background:linear-gradient(135deg,#6a4dff,#b15dff);
+}
+
+.header-pink{
+    background:linear-gradient(135deg,#ff2f68,#ff4f93);
+}
+
+.result-icon{
+    font-size:1.2rem;
+}
+
+.result-body{
+    padding:20px 24px;
+}
+
+.placeholder-text{
+    font-size:1rem;
+    color:var(--secondary-text-color);
+    font-style:italic;
+}
