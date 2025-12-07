@@ -205,7 +205,7 @@ If you’d like to connect, collaborate, or ask anything—reach out anytime!
 
 <div align="center">
 
-❤️ Made with passion by Harshit Rajput  
+❤️ Made with passion by Harshit Kumar  
 **CareerCompass – Guiding Your Future**
 
 </div>
