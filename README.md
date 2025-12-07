@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo.png" alt="CareerCompass Logo" width="120" />
+  <img src="assests/logo.png" alt="CareerCompass Logo" width="120" />
 
   # 🎯 CareerCompass – Guiding Your Future
 
