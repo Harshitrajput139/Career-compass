@@ -181,7 +181,8 @@ Then open index.html in any browser.
 
 4. Click Save
 
-Your website will deploy automatically.```
+Your website will deploy automatically. 
+```
 
 
 📬 Contact Me
