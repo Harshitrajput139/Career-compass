@@ -122,35 +122,38 @@ Find teammates for:
 
 ---
 
+
 ## 📁 Project Structure
-CareerCompass/
-│── index.html
-│── style.css
-│── compare.html
-│── compare.css
-│── career-quiz.html
-│── career-quiz.css
-│── mentor.html
-│── mentor.css
-│── scam-alert.html
-│── scam-alert.css
-│── skills.html
-│── skills.css
-│── country-guide.html
-│── country-guide.css
-│── team-up.html
-│── team-up.css
-│── README.md
-│── assets/
-├── home.png
-├── compare.png
-├── quiz.png
-├── mentor.png
-├── scam.png
-├── skillneed.png
-├── country.png
-├── teamup.png
-└── logo.png
+
+📦 **CareerCompass**
+├── 📄 index.html  
+├── 🎨 style.css  
+├── 📊 compare.html  
+├── 🎨 compare.css  
+├── 🧠 career-quiz.html  
+├── 🎨 career-quiz.css  
+├── 👨‍🏫 mentor.html  
+├── 🎨 mentor.css  
+├── 🚨 scam-alert.html  
+├── 🎨 scam-alert.css  
+├── 🎯 skills.html  
+├── 🎨 skills.css  
+├── 🌍 country-guide.html  
+├── 🎨 country-guide.css  
+├── 👥 team-up.html  
+├── 🎨 team-up.css  
+├── 📝 README.md  
+│
+└── 📁 **assets/**
+    ├── 🏠 home.png  
+    ├── 📊 compare.png  
+    ├── 🧠 quiz.png  
+    ├── 👨‍🏫 mentor.png  
+    ├── 🚨 scam.png  
+    ├── 🎯 skillneed.png  
+    ├── 🌍 country.png  
+    ├── 👥 teamup.png  
+    └── 🧭 logo.png  
 
 ## ⚙️ Technologies Used
 
